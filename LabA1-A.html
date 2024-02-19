@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+    <div class="all-page">
+    <header class="header">1</header>
+    <nav class="nav">2</nav>
+    <div class="footer">3</div>
+    <main class="main">
+        <h1 class="text">Title</h1>
+        <p class="parag_1">Lorem <span>inpsum</span> ipsum <b>dolorsit</b> amet consectetur adipisicing elit. Optio, dolorum? Maiores, accusamus non a eaque alias cum impedit repudiandae itaque, voluptatibus aliquid ab odit repellat. Repellendus blanditiis repudiandae tempora corrupti voluptatum, nemo accusamus accusantium et alias iusto aliquid itaque modi vero pariatur placeat nesciunt earum doloribus reiciendis harum consequatur libero! Iste ut, mollitia placeat voluptate exercitationem, odit vero magni repudiandae laboriosam sequi nesciunt eos, molestiae eligendi eveniet! Vel sapiente at qui labore perspiciatis assumenda facilis nam unde magni saepe id, accusamus dolore doloremque reiciendis laudantium iste libero eum dolor et maiores odit tempora. Ratione tempore eveniet, expedita cumque pariatur nobis!</p>
+        <ul class="lyst">
+            <li class="lyst_all">1</li>
+            <li class="lyst_all">2</li>
+            <li class="lyst_all">3</li>
+            <li class="lyst_all">4</li>
+            <li class="lyst_all">5</li>
+        </ul>
+    </main>
+</div>
+    <style>
+       .all-page {
+        display: grid;
+        grid-template-columns:20% 1fr;
+        grid-template-areas:
+        "nav header"
+        "nav main"
+        "nav footer";
+
+   
+}
+body{
+    padding-right:15vh;
+    font-size: 75px;
+}
+
+.lyst_all{
+    font-size: 22px;
+    list-style-type: none;
+    width: 10%;
+    text-align: center;
+}
+
+.lyst_all:hover{
+    font-size: 26px;
+    color: green;
+    box-shadow: 1px 1px 5px #f30000;
+    cursor: pointer;
+}
+
+span{
+    font-size: 20px;
+    color: rgb(128, 0, 81);
+    border: 1px solid black;
+}
+.parag_1{
+    font-size: 16px;
+    padding:0px 20px;
+}
+
+.text{
+    font-size: 20px;
+    text-align: center;
+}
+
+.main {
+    grid-area: main;
+    border: 5px solid black;
+    height: 54vh;
+}
+
+.footer {
+     display: grid;
+    grid-area: footer;
+    border: 5px solid black;
+    color: #fff;
+    background-color: green;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav {
+    display: grid;
+    grid-area: nav;
+    border: 5px solid black;
+    background-color: yellow;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    display: grid;
+    grid-area: header;
+    border: 5px solid black;
+    background-color: blue;
+    color: #fff;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+}
+    .header:hover,
+    .nav:hover,
+    .footer:hover{
+        background-color: red;
+        cursor: pointer;
+    }
+    </style>
+</body>
+</html>
